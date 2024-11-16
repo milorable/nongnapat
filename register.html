@@ -62,39 +62,7 @@
             align-content: center;
         }
 
-        /*register button*/
-        button {
-            cursor: pointer;
-            color: #ffeedc;
-            font-weight: 700;
-            transition: all 0.2s;
-            padding: 10px 20px;
-            border-radius: 100px;
-            background: #1c794c;
-            border: 1px solid transparent;
-            display: flex;
-            align-items: center;
-            font-size: 15px;
-        }
-
-        button:hover {
-            background: #26a568;
-        }
-
-        button>svg {
-            width: 34px;
-            margin-left: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        button:hover svg {
-            transform: translateX(5px);
-        }
-
-        button:active {
-            transform: scale(0.95);
-        }
-
+        
         .menubar {
             display: flex;
             flex-direction: column;
@@ -161,7 +129,7 @@
 <body style="background-color: #ffffff;">
     <div class="gridcontainer">
         <div class="item-H item">
-            <img src="image/cloverheader.jpg" style="width: auto; height: auto;" alt="header">
+            <img src="image/luckyclover.jpg" style="width: auto; height: auto;" alt="header">
         </div>
 
         <div class="item-L item2 menubar">
@@ -170,13 +138,12 @@
                 <button style="margin: 20px; " class="button">Hompage</button>
             </form>
             <img src="image/cat.gif" style="width: 150px; height: 150px;" alt="cat gif"><br>
-            <img src="image/cat2.gif" style="width: 150px; height: 150px; padding-top: 630px;" alt="cat2 gif"><br>
+            <img src="image/cat2.gif" style="width: 150px; height: 150px; padding-top: 930px;" alt="cat2 gif"><br>
             
         </div>
 
         <div class="item-M item2 maincontent">
-            <h2 style="background-color: #ffffff; ">Register</h2>
-            <h4 style="background-color: #ffffff; margin-top: 0px;">for membership</h4>
+            <img src="image/Register.jpg" style="width: auto; height: 450px;" alt="Register">
 
             <form action="https://httpbin.org/post" method="post" class="regiscontainer">
                 <img src="image/cloverpixel.gif" style="width: 150px; height: 150px;" alt="clover gif"><br>
@@ -190,6 +157,7 @@
                 <select id="gender" name="gender" >
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
+                    <option value="Other">Other</option>
                     <option value="Prefer not to say">Prefer not to say</option>
                 </select><br>
                 <hr>
@@ -207,9 +175,7 @@
                 <hr>
 
                 <label class="labelregis" for="address">Address</label><br>
-                <textarea id="address" name="address" rows="10"></textarea>
-
-                </label>
+                <textarea id="address" name="address" rows="10"></textarea></label><br>
 
 
 
